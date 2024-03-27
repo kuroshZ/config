@@ -1,0 +1,1 @@
+{"words":["keymap","noremap"],"dictionaries":["cspell-tool"],"$schema":"https:\/\/raw.githubusercontent.com\/streetsidesoftware\/cspell\/main\/cspell.schema.json","ignoreutilss":["node_modules","dist","build","\/cspell-tool.txt"],"globRoot":".","version":"0.2","dictionaryDefinitions":[{"name":"cspell-tool","path":".\/cspell-tool.txt","addWords":true}],"language":"en"}
