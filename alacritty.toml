@@ -1,0 +1,28 @@
+import = ["/home/kurosh/.config/alacritty/theme/themes/palenight.toml"]
+live_config_reload = true
+
+[font]
+size = 12.5
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[shell]
+args = ["-l", "-i"]
+program = "/usr/bin/zsh"
+
+[window]
+decorations = "Full"
+dynamic_padding = false
+opacity = 0.96
+startup_mode= "Fullscreen"
+
+[window.padding]
+x = 18
+y = 15
+
+[scrolling]
+history = 5000
+multiplier = 4
+ 
