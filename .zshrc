@@ -105,7 +105,7 @@ fi
 
 # Example aliases
 alias vim ="nvim"
-alias zshconfig="nvim ~/.zshrc"
+alias zshconfig="nvim ~/.config/.zshrc"
 alias clc="clear" 
 alias monitor_usbi_connection="udevadm monitor --udev"
 
@@ -118,6 +118,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 
 export TMUX_PLUGIN_MANAGER_PATH="$HOME/.config/tmux/plugins" 
+
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
@@ -146,10 +147,10 @@ function colCleanBuild(){
   current_path=$(pwd) 
   echo "$current_path"
   cd ~/ros2_ws
-  export CC=clang-18
-  export CXX=clang++-18
-  # export CC=gcc-12
-  # export CXX=g++-12
+  # export CC=clang-18
+  # export CXX=clang++-18
+  export CC=gcc-12
+  export CXX=g++-12
   if (( # == 0 )); then 
     echo "   ✨🧹  Cleaning previous Builds ...\n"
     rm -rf ~/ros2_ws/install && rm -rf ~/ros2_ws/log && rm -rf ~/ros2_ws/build 
@@ -164,8 +165,9 @@ function colCleanBuild(){
   source ~/ros2_ws/install/setup.zsh               
 }
 
-
-
+## showing user and host 
+SPACESHIP_HOST_SHOW="always"
+SPACESHIP_USER_SHOW="always"
 
 
 export PATH="$HOME/.local/bin:$PATH"
